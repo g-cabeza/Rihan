@@ -1,0 +1,28 @@
+<resources>
+
+    <string name="app_name">RihanApp2</string>
+    <string name="IB_TUTOR">TUTOR</string>
+    <string name="IB_USUARIO">USUARIO</string>
+    <string name="tv_usuario">USUARIO</string>
+    <string name="tv_tutor">TUTOR</string>
+
+    <string name="tv_nombre_usuario">Nombre</string>
+    <string name="tv_apellido_usuario">Apellido</string>
+    <string name="tv_calle_usuario">Calle</string>
+    <string name="tvn_numerocalle_usuario">Numero</string>
+    <string name="tv_Piso_usuario">Piso</string>
+    <string name="tv_Departamento_usuario">Departamento</string>
+    <string name="telefono_usuario">Telefono</string>
+    <string name="email_usuario">Email</string>
+    <string name="IB_BIEN">Email</string>
+
+    <string name="TV_nombre2">nombre2</string>
+    <string name="IB_BF">IB-BF</string>
+    <string name="IB_T">IB-T</string>
+    <string name="IB_A">IB-A</string>
+    <string name="IB_BV">IB-BV</string>
+    <string name="IB_B">IB_BANCO</string>
+    <string name="IB_AJ">IB_AJ</string>
+
+
+</resources>

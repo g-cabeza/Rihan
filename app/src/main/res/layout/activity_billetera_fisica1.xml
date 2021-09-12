@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BilleteraFisica1">
+
+    <EditText
+        android:id="@+id/editTextMontoActual"
+        android:layout_width="297dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewPagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Pagar"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonPagar"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonPagar"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonPagar" />
+
+    <TextView
+        android:id="@+id/textViewIngresarDinero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ingresar Dinero"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+        app:layout_constraintStart_toStartOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+
+    <ImageButton
+        android:id="@+id/imageButtonPagar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewQueHacer"
+        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintStart_toStartOf="@+id/textViewQueHacer"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQueHacer"
+        app:srcCompat="@drawable/pagar" />
+
+    <TextView
+        android:id="@+id/textViewQueHacer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="¿Que desea hacer?"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/editTextMontoActual"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/editTextMontoActual"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMontoActual" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:onClick="IngresarDinero"
+        app:layout_constraintEnd_toEndOf="@+id/textViewPagar"
+        app:layout_constraintStart_toStartOf="@+id/textViewPagar"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPagar"
+        app:srcCompat="@drawable/billetera" />
+</androidx.constraintlayout.widget.ConstraintLayout>
