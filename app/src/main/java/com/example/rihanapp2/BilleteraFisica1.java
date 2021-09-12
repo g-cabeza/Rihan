@@ -17,6 +17,8 @@ public class BilleteraFisica1 extends AppCompatActivity {
     //boton pagar
 
  //prueba de si github funciona o no
+    //mas comentarios de prubea
+    //muchos mas comentarios
 
     //Boton ingresar dinero
     public void IngresarDinero (View v){
