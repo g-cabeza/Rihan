@@ -16,7 +16,7 @@ public class ValidarBilletes extends AppCompatActivity {
 
     //Boton Bien  Hecho
     public void FinalizarCargaBilletes (View v){
-        Intent PantallaFinalMenuPrincipal = new Intent(this, MenuPrinciapal.class);
+        Intent PantallaFinalMenuPrincipal = new Intent(this, MenuPrincipal.class);
         startActivity(PantallaFinalMenuPrincipal );
     }
 

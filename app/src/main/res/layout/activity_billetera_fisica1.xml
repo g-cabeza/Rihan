@@ -6,71 +6,113 @@
     android:layout_height="match_parent"
     tools:context=".BilleteraFisica1">
 
-    <EditText
-        android:id="@+id/editTextMontoActual"
-        android:layout_width="297dp"
-        android:layout_height="68dp"
-        android:layout_marginTop="60dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textViewPagar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Pagar"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageButtonPagar"
-        app:layout_constraintHorizontal_bias="0.414"
-        app:layout_constraintStart_toStartOf="@+id/imageButtonPagar"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonPagar" />
-
-    <TextView
-        android:id="@+id/textViewIngresarDinero"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Ingresar Dinero"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
-        app:layout_constraintStart_toStartOf="@+id/imageButton4"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
-
     <ImageButton
         android:id="@+id/imageButtonPagar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textViewQueHacer"
-        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="@+id/textViewQueHacer"
         app:layout_constraintTop_toBottomOf="@+id/textViewQueHacer"
+        app:layout_constraintVertical_bias="0.066"
         app:srcCompat="@drawable/pagar" />
 
     <TextView
-        android:id="@+id/textViewQueHacer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="¿Que desea hacer?"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="@+id/editTextMontoActual"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="@+id/editTextMontoActual"
-        app:layout_constraintTop_toBottomOf="@+id/editTextMontoActual" />
+        android:id="@+id/textViewPagar"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:autoSizeMaxTextSize="32dp"
+        android:autoSizeMinTextSize="8dp"
+        android:autoSizeStepGranularity="2dp"
+        android:text="Pagar"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButtonPagar"
+        app:layout_constraintStart_toStartOf="@+id/imageButtonPagar"
+        app:layout_constraintTop_toBottomOf="@+id/imageButtonPagar"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <TextView
+        android:id="@+id/textViewIngresarDinero"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:autoSizeMaxTextSize="32dp"
+        android:autoSizeMinTextSize="8dp"
+        android:autoSizeStepGranularity="2dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:text="Ingresar Dinero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
+        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintStart_toStartOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:layout_constraintVertical_bias="0.294" />
 
     <ImageButton
         android:id="@+id/imageButton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
         android:onClick="IngresarDinero"
+        android:autoSizeMaxTextSize="64dp"
+        android:autoSizeMinTextSize="32dp"
+        android:autoSizeStepGranularity="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textViewPagar"
         app:layout_constraintStart_toStartOf="@+id/textViewPagar"
         app:layout_constraintTop_toBottomOf="@+id/textViewPagar"
+        app:layout_constraintVertical_bias="0.31"
         app:srcCompat="@drawable/billetera" />
+
+    <EditText
+        android:id="@+id/editTextMontoActual"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:autoSizeMaxTextSize="64dp"
+        android:autoSizeMinTextSize="32dp"
+        android:autoSizeStepGranularity="2dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView9"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:layout_constraintVertical_bias="0.031" />
+
+    <TextView
+        android:id="@+id/textViewQueHacer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:autoSizeMaxTextSize="40dp"
+        android:autoSizeMinTextSize="16dp"
+        android:autoSizeStepGranularity="2dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:text="¿Que desea hacer?"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editTextMontoActual"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/editTextMontoActual"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMontoActual"
+        app:layout_constraintVertical_bias="0.118" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:autoSizeMaxTextSize="64dp"
+        android:autoSizeMinTextSize="32dp"
+        android:autoSizeStepGranularity="2dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:text="Saldo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.054" />
 </androidx.constraintlayout.widget.ConstraintLayout>

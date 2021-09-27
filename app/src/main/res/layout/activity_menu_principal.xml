@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuPrincipal">
+
+    <ImageView
+        android:id="@+id/IB_BF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/IB_BF"
+        android:onClick="BilleteraFisica1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.21"
+        app:srcCompat="@drawable/billetera_fisica" />
+
+    <ImageView
+        android:id="@+id/IB_T"
+        android:layout_width="104dp"
+        android:layout_height="168dp"
+        android:contentDescription="@string/IB_T"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.186"
+        app:srcCompat="@drawable/trasnporte" />
+
+    <ImageView
+        android:id="@+id/IB_A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/IB_A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/IB_BF"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/IB_BF"
+        app:layout_constraintTop_toBottomOf="@+id/IB_BF"
+        app:layout_constraintVertical_bias="0.099"
+        app:srcCompat="@drawable/agenda" />
+
+    <ImageView
+        android:id="@+id/IB_BV"
+        android:layout_width="115dp"
+        android:layout_height="156dp"
+        android:contentDescription="@string/IB_BV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/IB_T"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/IB_T"
+        app:layout_constraintTop_toBottomOf="@+id/IB_T"
+        app:layout_constraintVertical_bias="0.135"
+        app:srcCompat="@drawable/billetera_virtual" />
+
+    <ImageView
+        android:id="@+id/IB_B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/IB_B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/IB_A"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/IB_A"
+        app:layout_constraintTop_toBottomOf="@+id/IB_A"
+        app:srcCompat="@drawable/banco" />
+
+    <ImageView
+        android:id="@+id/IB_AJ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/IB_AJ"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/IB_BV"
+        app:layout_constraintHorizontal_bias="0.421"
+        app:layout_constraintStart_toStartOf="@+id/IB_BV"
+        app:layout_constraintTop_toBottomOf="@+id/IB_BV"
+        app:srcCompat="@drawable/ajustes" />
+
+    <TextView
+        android:id="@+id/nombre2_usuario"
+        android:layout_width="217dp"
+        android:layout_height="33dp"
+        android:gravity="center"
+        android:hint="Hola NombreUsr"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>

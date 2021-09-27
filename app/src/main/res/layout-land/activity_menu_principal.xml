@@ -4,91 +4,107 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MenuPrinciapal">
+    tools:context=".MenuPrincipal">
 
     <ImageView
         android:id="@+id/IB_BF"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="130dp"
         android:contentDescription="@string/IB_BF"
         android:onClick="BilleteraFisica1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.227"
         app:srcCompat="@drawable/billetera_fisica" />
 
     <ImageView
         android:id="@+id/IB_T"
         android:layout_width="104dp"
         android:layout_height="168dp"
-        android:layout_marginTop="116dp"
-        android:layout_marginEnd="68dp"
         android:contentDescription="@string/IB_T"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/IB_BV"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toEndOf="@+id/IB_BF"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.181"
         app:srcCompat="@drawable/trasnporte" />
 
     <ImageView
         android:id="@+id/IB_A"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="40dp"
         android:contentDescription="@string/IB_A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/IB_BF"
+        app:layout_constraintVertical_bias="0.488"
         app:srcCompat="@drawable/agenda" />
 
     <ImageView
         android:id="@+id/IB_BV"
         android:layout_width="115dp"
         android:layout_height="156dp"
-        android:layout_marginTop="48dp"
-        android:layout_marginEnd="56dp"
         android:contentDescription="@string/IB_BV"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IB_T"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.219"
         app:srcCompat="@drawable/billetera_virtual" />
 
     <ImageView
         android:id="@+id/IB_B"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="48dp"
         android:contentDescription="@string/IB_B"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IB_A"
+        app:layout_constraintEnd_toStartOf="@+id/IB_AJ"
+        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintStart_toEndOf="@+id/IB_A"
+        app:layout_constraintTop_toBottomOf="@+id/IB_T"
+        app:layout_constraintVertical_bias="0.574"
         app:srcCompat="@drawable/banco" />
 
     <ImageView
         android:id="@+id/IB_AJ"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginBottom="50dp"
         android:contentDescription="@string/IB_AJ"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/IB_BV"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="0.596"
         app:srcCompat="@drawable/ajustes" />
 
     <TextView
         android:id="@+id/nombre2_usuario"
-        android:layout_width="217dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="90dp"
-        android:text="@string/TV_nombre2"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:autoSizeMaxTextSize="32dp"
+        android:autoSizeMinTextSize="8dp"
+        android:autoSizeStepGranularity="2dp"
+        android:gravity="center"
+        android:hint="Hola NombreUsr"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.065"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,7 +16,7 @@ public class ValidarMonedas extends AppCompatActivity {
 
     //Boton Bien termina y va al Menu  Principal
     public void FinalizarCargaMonedas (View v){
-        Intent PantallaFinalMenuPrincipal = new Intent(this, MenuPrinciapal.class);
+        Intent PantallaFinalMenuPrincipal = new Intent(this, MenuPrincipal.class);
         startActivity(PantallaFinalMenuPrincipal );
     }
 

@@ -19,4 +19,6 @@ public class MainActivity extends AppCompatActivity {
         Intent PrimerConfInicial = new Intent(this,ConfiguracionInicial.class);
         startActivity(PrimerConfInicial);
     }
+
+
 }

@@ -15,7 +15,7 @@
         <activity android:name=".IngresarBilletes" />
         <activity android:name=".IngresarDinero1" />
         <activity android:name=".BilleteraFisica1" />
-        <activity android:name=".MenuPrinciapal" />
+        <activity android:name=".MenuPrincipal" />
         <activity android:name=".ConfiguracionInicial" />
         <activity android:name=".MainActivity">
             <intent-filter>
