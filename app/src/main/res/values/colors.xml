@@ -7,4 +7,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="BlancoSuave">#F8F2F2</color>
+    <color name="GrisClaro">#F5F5F5</color>
+    <color name="TealA400">#1DE9B6</color>
+    <color name="Gris200">#EEEEEE</color>
+    <color name="Gris300">#EOEOEO</color>
+    <color name="Gris400">#BDBDBD</color>
+
+
+
+
+
 </resources>

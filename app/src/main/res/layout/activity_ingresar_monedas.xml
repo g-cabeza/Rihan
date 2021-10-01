@@ -2,262 +2,341 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/textViewTituloMonedas"
+    android:id="@+id/ConstraitLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@color/white"
+    android:background="@color/white"
     tools:context=".IngresarMonedas">
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:text="Monedas"
+        android:id="@+id/textView33"
+        android:layout_width="182dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:fontFamily="sans-serif-thin"
+        android:text="@string/TituloMonedasCarga"
+        android:textColor="@color/black"
         android:textSize="20sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="391dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:text='Presione " +" para ingresar cantidad de Monedas                             Presione "-" para sacar Monedas '
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        tools:layout_editor_absoluteY="96dp" />
-
-    <TableLayout
-        android:layout_width="393dp"
-        android:layout_height="456dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4">
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageButton
-                android:id="@+id/imageButton6"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:backgroundTint="@color/white"
-                app:srcCompat="@drawable/mas_picto" />
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/moneda_10p" />
-
-            <ImageButton
-                android:id="@+id/imageButton7"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:backgroundTint="@color/white"
-                app:srcCompat="@drawable/menos_picto" />
-
-            <EditText
-                android:id="@+id/editTextTextPersonName"
-                android:layout_width="226dp"
-                android:layout_height="match_parent"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageButton
-                android:id="@+id/imageButton8"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:backgroundTint="@color/white"
-                app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
-
-            <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/moneda_5p" />
-
-            <ImageButton
-                android:id="@+id/imageButton9"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:backgroundTint="@color/white"
-                app:srcCompat="@drawable/ic_baseline_remove_circle_outline_24" />
-
-            <EditText
-                android:id="@+id/editTextTextPersonName2"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageButton
-                android:id="@+id/imageButton10"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:backgroundTint="@color/white"
-                app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
-
-            <ImageView
-                android:id="@+id/imageView8"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/moneda_2p" />
-
-            <ImageButton
-                android:id="@+id/imageButton11"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:backgroundTint="@color/white"
-                app:srcCompat="@drawable/ic_baseline_remove_circle_outline_24" />
-
-            <EditText
-                android:id="@+id/editTextTextPersonName3"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageButton
-                android:id="@+id/imageButton12"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:backgroundTint="@color/white"
-                app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
-
-            <ImageView
-                android:id="@+id/imageView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/moneda_1p" />
-
-            <ImageButton
-                android:id="@+id/imageButton13"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:backgroundTint="@color/white"
-                app:srcCompat="@drawable/ic_baseline_remove_circle_outline_24" />
-
-            <EditText
-                android:id="@+id/editTextTextPersonName4"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageButton
-                android:id="@+id/imageButton28"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:backgroundTint="@color/white"
-                app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
-
-            <ImageView
-                android:id="@+id/imageView13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/moneda_50cent" />
-
-            <ImageButton
-                android:id="@+id/imageButton29"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:backgroundTint="@color/white"
-                app:srcCompat="@drawable/ic_baseline_remove_circle_outline_24" />
-
-            <EditText
-                android:id="@+id/editTextTextPersonName5"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <ImageButton
-                android:id="@+id/imageButton30"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:backgroundTint="@color/white"
-                app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
-
-            <ImageView
-                android:id="@+id/imageView15"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/moneda_25cent" />
-
-            <ImageButton
-                android:id="@+id/imageButton31"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:backgroundTint="@color/white"
-                app:srcCompat="@drawable/ic_baseline_remove_circle_outline_24" />
-
-            <EditText
-                android:id="@+id/editTextTextPersonName6"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
-        </TableRow>
-    </TableLayout>
-
-    <ImageButton
-        android:id="@+id/imageButton32"
+        android:id="@+id/textView34"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginBottom="20dp"
-        android:onClick="IngresarMonedasAtras"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:text="Presione + para agregar o - para sacar cantidades"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView33"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="@+id/textView33"
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+    <ImageView
+        android:id="@+id/imageView40"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/Sumar"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34"
+        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/IV_M_10"
+        app:layout_constraintStart_toEndOf="@+id/imageView40"
+        app:layout_constraintTop_toBottomOf="@+id/textView34"
+        app:srcCompat="@drawable/moneda_10p" />
+
+    <ImageView
+        android:id="@+id/imageView41"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/Restar"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView34"
+        app:srcCompat="@drawable/ic_baseline_remove_circle_outline_24" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-thin"
+        android:hint="@string/CantidadMonedas"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView41"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+    <ImageView
+        android:id="@+id/imageView42"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/Sumar"
+        app:layout_constraintStart_toStartOf="@+id/imageView40"
+        app:layout_constraintTop_toBottomOf="@+id/imageView40"
+        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/IV_M_5"
+        app:layout_constraintStart_toEndOf="@+id/imageView42"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3"
+        app:srcCompat="@drawable/moneda_5p" />
+
+    <ImageView
+        android:id="@+id/imageView43"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/Restar"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView41"
+        app:srcCompat="@drawable/ic_baseline_remove_circle_outline_24" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-thin"
+        android:hint="@string/CantidadMonedas"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView43"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <ImageView
+        android:id="@+id/imageView44"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/Sumar"
+        app:layout_constraintStart_toStartOf="@+id/imageView42"
+        app:layout_constraintTop_toBottomOf="@+id/imageView42"
+        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/IV_M_2"
+        app:layout_constraintStart_toEndOf="@+id/imageView44"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:srcCompat="@drawable/moneda_2p" />
+
+    <ImageView
+        android:id="@+id/imageView45"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/Restar"
+        app:layout_constraintStart_toEndOf="@+id/imageView6"
+        app:layout_constraintTop_toBottomOf="@+id/imageView43"
+        app:srcCompat="@drawable/ic_baseline_remove_circle_outline_24" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-thin"
+        android:hint="@string/CantidadMonedas"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView45"
+        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+    <ImageView
+        android:id="@+id/imageView46"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/Sumar"
+        app:layout_constraintStart_toStartOf="@+id/imageView44"
+        app:layout_constraintTop_toBottomOf="@+id/imageView44"
+        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/IV_M_1"
+        app:layout_constraintStart_toEndOf="@+id/imageView46"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6"
+        app:srcCompat="@drawable/moneda_1p" />
+
+    <ImageView
+        android:id="@+id/imageView48"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/Restar"
+        app:layout_constraintStart_toEndOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView45"
+        app:srcCompat="@drawable/ic_baseline_remove_circle_outline_24" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-thin"
+        android:hint="@string/CantidadMonedas"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView48"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <ImageView
+        android:id="@+id/imageView49"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/Sumar"
+        app:layout_constraintStart_toStartOf="@+id/imageView46"
+        app:layout_constraintTop_toBottomOf="@+id/imageView46"
+        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/IV_M_50"
+        app:layout_constraintStart_toEndOf="@+id/imageView49"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7"
+        app:srcCompat="@drawable/moneda_50cent" />
+
+    <ImageView
+        android:id="@+id/imageView50"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/Restar"
+        app:layout_constraintStart_toEndOf="@+id/imageView8"
+        app:layout_constraintTop_toBottomOf="@+id/imageView48"
+        app:srcCompat="@drawable/ic_baseline_remove_circle_outline_24" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-thin"
+        android:hint="@string/CantidadMonedas"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView50"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <ImageView
+        android:id="@+id/imageView51"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/Sumar"
+        app:layout_constraintStart_toStartOf="@+id/imageView49"
+        app:layout_constraintTop_toBottomOf="@+id/imageView49"
+        app:srcCompat="@drawable/ic_baseline_add_circle_outline_24" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/IV_M_25"
+        app:layout_constraintStart_toEndOf="@+id/imageView51"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8"
+        app:srcCompat="@drawable/moneda_25cent" />
+
+    <ImageView
+        android:id="@+id/imageView52"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/Restar"
+        app:layout_constraintStart_toEndOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/imageView50"
+        app:srcCompat="@drawable/ic_baseline_remove_circle_outline_24" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-thin"
+        android:hint="@string/CantidadMonedas"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView52"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
+
+    <ImageView
+        android:id="@+id/imageView55"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="100dp"
+        android:layout_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView51"
         app:srcCompat="@drawable/atras" />
 
-    <ImageButton
-        android:id="@+id/imageButton33"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="10dp"
-        android:onClick="ValidarMonedas"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/imageView56"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="50dp"
+        android:layout_weight="1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/bien" />
+        app:layout_constraintTop_toBottomOf="@+id/textView32"
+        app:srcCompat="@drawable/pulgararriba" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

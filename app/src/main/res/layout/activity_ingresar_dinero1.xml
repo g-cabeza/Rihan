@@ -4,80 +4,90 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".IngresarDinero1">
-
-    <ImageButton
-        android:id="@+id/imageButtonBilletes"
-        android:layout_width="131dp"
-        android:layout_height="86dp"
-        android:layout_marginTop="64dp"
-        android:onClick="IngresarBilletes"
-        app:layout_constraintEnd_toEndOf="@+id/textViewMonedas"
-        app:layout_constraintStart_toStartOf="@+id/textViewMonedas"
-        app:layout_constraintTop_toBottomOf="@+id/textViewMonedas"
-        app:srcCompat="@drawable/billete" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:onClick="IngresarMonedas"
-        app:layout_constraintEnd_toEndOf="@+id/textViewQueIngresa"
-        app:layout_constraintStart_toStartOf="@+id/textViewQueIngresa"
-        app:layout_constraintTop_toBottomOf="@+id/textViewQueIngresa"
-        app:srcCompat="@drawable/signo_dinero" />
-
-    <TextView
-        android:id="@+id/textViewMonedas"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Monedas"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:autoSizeMaxTextSize="32sp"
-        app:autoSizeMinTextSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton2"
-        app:layout_constraintStart_toStartOf="@+id/imageButton2"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
-
-    <TextView
-        android:id="@+id/textViewBilletes"
-        android:layout_width="133dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="16dp"
-        android:text="Billetes"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:autoSizeMaxTextSize="32sp"
-        app:autoSizeMinTextSize="16sp"
-        app:layout_constraintEnd_toEndOf="@+id/imageButtonBilletes"
-        app:layout_constraintHorizontal_bias="0.486"
-        app:layout_constraintStart_toStartOf="@+id/imageButtonBilletes"
-        app:layout_constraintTop_toBottomOf="@+id/imageButtonBilletes" />
 
     <TextView
         android:id="@+id/textViewQueIngresa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:text="¿Que desea ingresar?"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/Quedeseaingresar"
         android:textAlignment="center"
+        android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageButton
-        android:id="@+id/imageButtonAtras1"
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewQueIngresa"
+        app:layout_constraintStart_toStartOf="@+id/textViewQueIngresa"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQueIngresa"
+        app:srcCompat="@drawable/monedas" />
+
+    <TextView
+        android:id="@+id/textViewMonedas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
-        android:onClick="AtrasBF"
-        app:layout_constraintEnd_toEndOf="@+id/textViewBilletes"
-        app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="@+id/textViewBilletes"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/Monedas"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:autoSizeMaxTextSize="32sp"
+        app:autoSizeMinTextSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView37"
+        app:layout_constraintStart_toStartOf="@+id/imageView37"
+        app:layout_constraintTop_toBottomOf="@+id/imageView37" />
+
+    <ImageView
+        android:id="@+id/imageView38"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewMonedas"
+        app:layout_constraintStart_toStartOf="@+id/textViewMonedas"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMonedas"
+        app:srcCompat="@drawable/billete" />
+
+    <TextView
+        android:id="@+id/textViewBilletes"
+        android:layout_width="133dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="25dp"
+        android:text="@string/Billetes"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:autoSizeMaxTextSize="32sp"
+        app:autoSizeMinTextSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView38"
+        app:layout_constraintStart_toStartOf="@+id/imageView38"
+        app:layout_constraintTop_toBottomOf="@+id/imageView38" />
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textViewBilletes"
         app:srcCompat="@drawable/atras" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "704472018124",
+    "project_id": "fir-rihanapp",
+    "storage_bucket": "fir-rihanapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:704472018124:android:2e817134db587071a46669",
+        "android_client_info": {
+          "package_name": "com.example.rihanapp2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "704472018124-k71migbnf4c2olmi6g6u0orm5li4m10b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ7gL1muEYZXQjCo3Ka0SkPuiRH8lRytY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "704472018124-k71migbnf4c2olmi6g6u0orm5li4m10b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

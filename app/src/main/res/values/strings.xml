@@ -10,19 +10,72 @@
     <string name="tv_apellido_usuario">Apellido</string>
     <string name="tv_calle_usuario">Calle</string>
     <string name="tvn_numerocalle_usuario">Numero</string>
-    <string name="tv_Piso_usuario">Piso</string>
-    <string name="tv_Departamento_usuario">Departamento</string>
-    <string name="telefono_usuario">Telefono</string>
     <string name="email_usuario">Email</string>
     <string name="IB_BIEN">Email</string>
 
     <string name="TV_nombre2">nombre2</string>
+
     <string name="IB_BF">IB-BF</string>
     <string name="IB_T">IB-T</string>
     <string name="IB_A">IB-A</string>
     <string name="IB_BV">IB-BV</string>
     <string name="IB_B">IB_BANCO</string>
     <string name="IB_AJ">IB_AJ</string>
+    <string name="Atras">Atras</string>
+    <string name="CerrarSesio">CS</string>
+    <string name="Saldo">Saldo</string>
+    <string name="Quedeseahacer">¿Que desea hacer?</string>
+    <string name="Quedeseaingresar">¿Que desea Ingresar?</string>
+    <string name="Ing_Dinero">Ingresar Dinero</string>
+    <string name="Pagar">Pagar</string>
+    <string name="Monedas">Monedas</string>
+    <string name="B_Monedas">B_Monedas</string>
+    <string name="Billetes">Billetes</string>
+    <string name="B_Billetes">B_Billetes</string>
+
+
+    <string name="tvBilFisica">Billetera Fisica</string>
+    <string name="tvBilVirtual">Billetera Virtual</string>
+    <string name="tvTrasnporte">Trasporte</string>
+    <string name="tvAjuste">Ajuste</string>
+    <string name="tvAgenda">Agenda</string>
+    <string name="tvCerrarSesion">Cerrar Sesion</string>
+
+
+
+
+    <string name="Registrar">Registar</string>
+    <string name="Acceder">Acceder</string>
+    <string name="RestaurarContraseña">Restaurar Contraseña</string>
+    <string name="Titulo">RIHAN</string>
+    <string name="Contraseña">Contraseña</string>
+
+
+    <string name="Sumar">Sumar</string>
+    <string name="Restar">Restar</string>
+    <string name="CantidadMonedas">Cantidad Monedas</string>
+    <string name="CantidadBilletes">Cantidad Billetes</string>
+
+    <string name="IV_M_10">M10</string>
+    <string name="IV_M_5">M5</string>
+    <string name="IV_M_2">M2</string>
+    <string name="IV_M_1">M1</string>
+    <string name="IV_M_50">M50</string>
+    <string name="IV_M_25">M25</string>
+
+    <string name="IV_B_1000">B1000</string>
+    <string name="IV_B_500">B500</string>
+    <string name="IV_B_200">B200</string>
+    <string name="IV_B_100">B100</string>
+    <string name="IV_B_50">B50</string>
+    <string name="IV_B_20">B20</string>
+    <string name="IV_B_10">B10</string>
+    <string name="TituloBilletesCarga">Carga los Billetes</string>
+    <string name="TituloMonedasCarga">Carga las Monedas</string>
+    <string name="VerificacionBilletes">Verifica las cantidades </string>
+
+    <string name="VerificacionMonedas">Verifica las cantidades</string>
+    <string name="InicioSesionGoogle">Iniciar Sesion con Google</string>
 
 
 </resources>
