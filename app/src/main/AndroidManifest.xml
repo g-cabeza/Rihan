@@ -9,7 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RihanApp2">
-        <activity android:name=".RecuperarContrasena"></activity>
+        <activity
+            android:name=".sinvuelto"
+            android:exported="true" />
+        <activity
+            android:name=".vuelto"
+            android:exported="true" />
+        <activity
+            android:name=".pagar_2"
+            android:exported="true" />
+        <activity
+            android:name=".pagarIngresoDinero"
+            android:exported="true" />
+        <activity android:name=".RecuperarContrasena" />
         <activity android:name=".NuevoUsuario" />
         <activity android:name=".ValidarBilletes" />
         <activity android:name=".ValidarMonedas" />
