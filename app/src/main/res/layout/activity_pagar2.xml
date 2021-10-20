@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".pagar_2">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="347dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="hint" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView77"
+        android:layout_width="105dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+        app:srcCompat="@drawable/vuelto" />
+
+    <ImageView
+        android:id="@+id/imageView78"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView77"
+        app:srcCompat="@drawable/billete_1000" />
+
+    <ImageView
+        android:id="@+id/imageView79"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView78"
+        app:layout_constraintTop_toBottomOf="@+id/imageView78"
+        app:srcCompat="@drawable/billete_500" />
+
+    <ImageView
+        android:id="@+id/imageView80"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView79"
+        app:layout_constraintTop_toBottomOf="@+id/imageView79"
+        app:srcCompat="@drawable/billete_200" />
+
+    <ImageView
+        android:id="@+id/imageView81"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView80"
+        app:layout_constraintTop_toBottomOf="@+id/imageView80"
+        app:srcCompat="@drawable/billete_100" />
+
+    <ImageView
+        android:id="@+id/imageView82"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView81"
+        app:layout_constraintTop_toBottomOf="@+id/imageView81"
+        app:srcCompat="@drawable/billete_50" />
+
+    <ImageView
+        android:id="@+id/imageView83"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView82"
+        app:layout_constraintTop_toBottomOf="@+id/imageView82"
+        app:srcCompat="@drawable/billete_20" />
+
+    <ImageView
+        android:id="@+id/imageView84"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView83"
+        app:layout_constraintTop_toBottomOf="@+id/imageView83"
+        app:srcCompat="@drawable/billete_10" />
+
+    <TextView
+        android:id="@+id/textView36"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imageView78"
+        app:layout_constraintTop_toBottomOf="@+id/imageView77" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imageView79"
+        app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imageView80"
+        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+    <TextView
+        android:id="@+id/textView39"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imageView81"
+        app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+    <TextView
+        android:id="@+id/textView40"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imageView82"
+        app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+    <TextView
+        android:id="@+id/textView41"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imageView83"
+        app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+    <TextView
+        android:id="@+id/textView42"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imageView84"
+        app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+    <ImageView
+        android:id="@+id/imageView85"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@+id/textView36"
+        app:layout_constraintTop_toBottomOf="@+id/imageView77"
+        app:srcCompat="@drawable/moneda_10p" />
+
+    <ImageView
+        android:id="@+id/imageView86"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView85"
+        app:layout_constraintTop_toBottomOf="@+id/imageView85"
+        app:srcCompat="@drawable/moneda_5p" />
+
+    <ImageView
+        android:id="@+id/imageView87"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView86"
+        app:layout_constraintTop_toBottomOf="@+id/imageView86"
+        app:srcCompat="@drawable/moneda_2p" />
+
+    <ImageView
+        android:id="@+id/imageView88"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView87"
+        app:layout_constraintTop_toBottomOf="@+id/imageView87"
+        app:srcCompat="@drawable/moneda_1p" />
+
+    <ImageView
+        android:id="@+id/imageView89"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView88"
+        app:layout_constraintTop_toBottomOf="@+id/imageView88"
+        app:srcCompat="@drawable/moneda_50cent" />
+
+    <ImageView
+        android:id="@+id/imageView90"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView89"
+        app:layout_constraintTop_toBottomOf="@+id/imageView89"
+        app:srcCompat="@drawable/moneda_25cent" />
+
+    <TextView
+        android:id="@+id/textView43"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView77" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/textView43"
+        app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/textView44"
+        app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/textView45"
+        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/textView46"
+        app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/textView47"
+        app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+    <TextView
+        android:id="@+id/textView49"
+        android:layout_width="201dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/imageView77"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
+
+    <ImageView
+        android:id="@+id/imageView91"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView84"
+        app:srcCompat="@drawable/atras" />
+
+    <ImageView
+        android:id="@+id/imageView92"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView90"
+        app:srcCompat="@drawable/pulgararriba" />
+</androidx.constraintlayout.widget.ConstraintLayout>

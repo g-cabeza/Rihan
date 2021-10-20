@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vuelto">
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="165dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="40dp"
+        android:paddingTop="5sp"
+        android:text="CON  VUELTO"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView94"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView94"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/convuelto" />
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="311dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="50dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView94" />
+
+    <ImageView
+        android:id="@+id/imageView95"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/textView52"
+        app:layout_constraintTop_toBottomOf="@+id/textView52"
+        app:srcCompat="@drawable/billete_1000" />
+
+    <ImageView
+        android:id="@+id/imageView96"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView95"
+        app:layout_constraintTop_toBottomOf="@+id/imageView95"
+        app:srcCompat="@drawable/billete_500" />
+
+    <ImageView
+        android:id="@+id/imageView97"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView96"
+        app:layout_constraintTop_toBottomOf="@+id/imageView96"
+        app:srcCompat="@drawable/billete_200" />
+
+    <ImageView
+        android:id="@+id/imageView98"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView97"
+        app:layout_constraintTop_toBottomOf="@+id/imageView97"
+        app:srcCompat="@drawable/billete_100" />
+
+    <ImageView
+        android:id="@+id/imageView99"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView98"
+        app:layout_constraintTop_toBottomOf="@+id/imageView98"
+        app:srcCompat="@drawable/billete_50" />
+
+    <ImageView
+        android:id="@+id/imageView100"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView99"
+        app:layout_constraintTop_toBottomOf="@+id/imageView99"
+        app:srcCompat="@drawable/billete_20" />
+
+    <ImageView
+        android:id="@+id/imageView101"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toStartOf="@+id/imageView100"
+        app:layout_constraintTop_toBottomOf="@+id/imageView100"
+        app:srcCompat="@drawable/billete_10" />
+
+    <ImageView
+        android:id="@+id/imageView102"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/atras" />
+
+    <ImageView
+        android:id="@+id/imageView103"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView52"
+        app:layout_constraintTop_toBottomOf="@+id/textView52"
+        app:srcCompat="@drawable/moneda_10p" />
+
+    <ImageView
+        android:id="@+id/imageView104"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView103"
+        app:layout_constraintTop_toBottomOf="@+id/imageView103"
+        app:srcCompat="@drawable/moneda_5p" />
+
+    <ImageView
+        android:id="@+id/imageView105"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView104"
+        app:layout_constraintTop_toBottomOf="@+id/imageView104"
+        app:srcCompat="@drawable/moneda_2p" />
+
+    <ImageView
+        android:id="@+id/imageView106"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView105"
+        app:layout_constraintTop_toBottomOf="@+id/imageView105"
+        app:srcCompat="@drawable/moneda_1p" />
+
+    <ImageView
+        android:id="@+id/imageView107"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView106"
+        app:layout_constraintTop_toBottomOf="@+id/imageView106"
+        app:srcCompat="@drawable/moneda_50cent" />
+
+    <ImageView
+        android:id="@+id/imageView108"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView107"
+        app:layout_constraintTop_toBottomOf="@+id/imageView107"
+        app:srcCompat="@drawable/moneda_25cent" />
+
+    <ImageView
+        android:id="@+id/imageView109"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/pulgararriba" />
+</androidx.constraintlayout.widget.ConstraintLayout>

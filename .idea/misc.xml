@@ -3,20 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/font/comfortaa.xml" value="0.23333333333333334" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout-land/activity_billetera_fisica1.xml" value="0.1" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout-land/activity_configuracion_inicial.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout-land/activity_menu_principal.xml" value="0.5" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_billetera_fisica1.xml" value="0.25" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_configuracion_inicial.xml" value="0.14" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_ingresar_billetes.xml" value="0.22" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_configuracion_inicial.xml" value="0.25" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_ingresar_billetes.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_ingresar_dinero1.xml" value="0.18" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_ingresar_monedas.xml" value="0.3287671232876712" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_ingresar_monedas.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_menu_principal.xml" value="0.25" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_menu_principal.xml" value="0.22" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_nuevo_usuario.xml" value="0.25" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_pagar2.xml" value="0.25" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_pagar_ingreso_dinero.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_recuperar_contrasena.xml" value="0.33" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_sinvuelto.xml" value="0.1953125" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_validar_billetes.xml" value="0.25" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_validar_monedas.xml" value="0.33" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_validar_monedas.xml" value="0.25" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_vuelto.xml" value="0.25" />
       </map>
     </option>
   </component>

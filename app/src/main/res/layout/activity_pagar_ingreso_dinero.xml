@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".pagarIngresoDinero">
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="365dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/Pagar"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView74"
+        android:layout_width="170dp"
+        android:layout_height="165dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/textInputEditText"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/textInputEditText"
+        app:layout_constraintTop_toBottomOf="@+id/textInputEditText"
+        app:srcCompat="@drawable/dardinero" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="90dp">
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText"
+        android:layout_width="372dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:background="@color/GrisClaro"
+        android:drawableLeft="@drawable/ic_bf"
+        android:hint="Monto Actual en Billetera"
+        android:inputType="number"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/textView35"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView35"
+        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/textInputEditText2"
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:drawableLeft="@drawable/ic_baseline_attach_money_24"
+        android:hint="Ingrese Monto a Pagar"
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/imageView74"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/imageView74"
+        app:layout_constraintTop_toBottomOf="@+id/imageView74" />
+
+    <ImageView
+        android:id="@+id/imageView75"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputEditText2"
+        app:srcCompat="@drawable/pulgararriba" />
+
+    <ImageView
+        android:id="@+id/imageView76"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="120dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputEditText2"
+        app:srcCompat="@drawable/atras" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
