@@ -109,7 +109,7 @@ public class NuevoUsuario extends AppCompatActivity implements View.OnClickListe
         progressBar.setVisibility(View.GONE);
 
         mAuth.createUserWithEmailAndPassword(Email,ContraseñaUsuario)
-                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                .addOnCompleteListener(new OnCompleteListener <AuthResult>() {
                     @Override
                     public void onComplete(@NonNull  Task<AuthResult> task) {
                         if(task.isSuccessful()){

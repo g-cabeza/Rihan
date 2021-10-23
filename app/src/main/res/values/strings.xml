@@ -42,9 +42,9 @@
     <string name="tvCerrarSesion">Cerrar Sesion</string>
 
 
-    <string name="Registrar">Registar</string>
+    <string name="Registrar">Registrar</string>
     <string name="Acceder">Acceder</string>
-    <string name="RestaurarContraseña">Restaurar Contraseña</string>
+    <string name="RestaurarContraseña">Restaurar\nContraseña</string>
     <string name="Titulo">RIHAN</string>
     <string name="Contraseña">Contraseña</string>
 
