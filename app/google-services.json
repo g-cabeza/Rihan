@@ -1,33 +1,42 @@
 {
   "project_info": {
-    "project_number": "704472018124",
-    "project_id": "fir-rihanapp",
-    "storage_bucket": "fir-rihanapp.appspot.com"
+    "project_number": "520099183287",
+    "firebase_url": "https://rihan-dca1f-default-rtdb.firebaseio.com",
+    "project_id": "rihan-dca1f",
+    "storage_bucket": "rihan-dca1f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:704472018124:android:2e817134db587071a46669",
+        "mobilesdk_app_id": "1:520099183287:android:4d48b97e548ee48f096b32",
         "android_client_info": {
           "package_name": "com.example.rihanapp2"
         }
       },
       "oauth_client": [
         {
-          "client_id": "704472018124-k71migbnf4c2olmi6g6u0orm5li4m10b.apps.googleusercontent.com",
+          "client_id": "520099183287-leglv39f1ke71vdpemflhrce3a1vll43.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rihanapp2",
+            "certificate_hash": "e8208c201be0f434a86d0afb681328f6da59d67a"
+          }
+        },
+        {
+          "client_id": "520099183287-s8u9c322vnq6j3ljn5761t8lv3ie4pdo.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBJ7gL1muEYZXQjCo3Ka0SkPuiRH8lRytY"
+          "current_key": "AIzaSyDPnJkQWHC2Eil_7878K73grSnHAS05BDQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "704472018124-k71migbnf4c2olmi6g6u0orm5li4m10b.apps.googleusercontent.com",
+              "client_id": "520099183287-s8u9c322vnq6j3ljn5761t8lv3ie4pdo.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

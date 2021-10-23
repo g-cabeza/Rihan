@@ -17,19 +17,35 @@
         android:textColor="@color/white"
         android:textSize="60sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck"
+        tools:layout_editor_absoluteX="-16dp" />
+
+
+    <TextView
+        android:id="@+id/tVAcceder"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:fontFamily="sans-serif-medium"
+        android:minHeight="48dp"
+        android:onClick="onClick"
+        android:text="@string/Acceder"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/sign_in_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTPassword" />
 
     <EditText
         android:id="@+id/nombre_usuario"
-        android:layout_width="match_parent"
-        android:layout_height="50sp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginEnd="15dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:autofillHints="name"
         android:background="@color/Gris200"
         android:drawableLeft="@drawable/persona"
@@ -41,18 +57,84 @@
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/tVTitulo"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/tVTitulo"
-        app:layout_constraintTop_toBottomOf="@+id/tVTitulo" />
+        app:layout_constraintBottom_toTopOf="@+id/eTEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVTitulo"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <EditText
+        android:id="@+id/eTPassword"
+        style="@android:style/Widget.Material.EditText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:autofillHints="password"
+        android:background="@color/Gris200"
+        android:drawableLeft="@drawable/lock"
+        android:ems="10"
+        android:hint="@string/Contraseña"
+        android:inputType="textPassword"
+        android:maxLength="6"
+        android:minHeight="48dp"
+
+        android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tVAcceder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eTEmailAddress" />
+
+    <TextView
+        android:id="@+id/tVRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:autoSizeMaxTextSize="20dp"
+        android:autoSizeMinTextSize="14dp"
+        android:autoSizeStepGranularity="2dp"
+        android:autoSizeTextType="uniform"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="@string/Registrar"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/sign_in_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tVRestaurarContraseña"
+        app:layout_constraintTop_toBottomOf="@+id/tVAcceder"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/tVRestaurarContraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:autoSizeMaxTextSize="20dp"
+        android:autoSizeMinTextSize="14dp"
+        android:autoSizeStepGranularity="2dp"
+        android:autoSizeTextType="uniform"
+        android:onClick="onClick"
+        android:paddingLeft="10dp"
+        android:text="@string/RestaurarContraseña"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/sign_in_button"
+        app:layout_constraintEnd_toStartOf="@+id/tVRegistrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tVAcceder" />
 
     <EditText
         android:id="@+id/eTEmailAddress"
-        android:layout_width="match_parent"
-        android:layout_height="50sp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="15dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:autofillHints="emailAddress"
         android:background="@color/Gris200"
         android:drawableStart="@drawable/mail2"
@@ -64,99 +146,28 @@
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/nombre_usuario"
-        app:layout_constraintStart_toStartOf="@+id/nombre_usuario"
-        app:layout_constraintTop_toBottomOf="@+id/nombre_usuario" />
-
-    <EditText
-        android:id="@+id/eTPassword"
-        style="@android:style/Widget.Material.EditText"
-        android:layout_width="match_parent"
-        android:layout_height="50sp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginEnd="15dp"
-        android:autofillHints="password"
-        android:background="@color/Gris200"
-        android:drawableLeft="@drawable/lock"
-        android:ems="10"
-        android:hint="@string/Contraseña"
-        android:inputType="textPassword"
-        android:maxLength="6"
-        android:minHeight="48dp"
-        android:paddingLeft="5dp"
-
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/eTEmailAddress"
-        app:layout_constraintStart_toStartOf="@+id/eTEmailAddress"
-        app:layout_constraintTop_toBottomOf="@+id/eTEmailAddress" />
-
-    <TextView
-        android:id="@+id/tVAcceder"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="15dp"
-        android:background="@color/teal_200"
-        android:fontFamily="sans-serif-medium"
-        android:minHeight="48dp"
-        android:onClick="onClick"
-        android:text="@string/Acceder"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/eTPassword"
-        app:layout_constraintHorizontal_bias="0.466"
-        app:layout_constraintStart_toStartOf="@+id/eTPassword"
-        app:layout_constraintTop_toBottomOf="@+id/eTPassword" />
-
-    <TextView
-        android:id="@+id/tVRestaurarContraseña"
-        android:layout_width="185dp"
-        android:layout_height="29dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="20dp"
-        android:layout_weight="1"
-        android:onClick="onClick"
-        android:paddingLeft="10dp"
-        android:text="@string/RestaurarContraseña"
-        android:textAlignment="textStart"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="normal"
-        app:layout_constraintStart_toStartOf="@+id/tVAcceder"
-        app:layout_constraintTop_toBottomOf="@+id/tVAcceder" />
-
-    <TextView
-        android:id="@+id/tVRegistrar"
-        android:layout_width="164dp"
-        android:layout_height="29dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="15dp"
-        android:layout_weight="1"
-        android:onClick="onClick"
-        android:text="@string/Registrar"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/eTPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tVAcceder"
-        tools:ignore="TouchTargetSizeCheck" />
-
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nombre_usuario" />
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/sign_in_button"
-        android:layout_width="306dp"
-        android:layout_height="67dp"
-        android:layout_marginTop="68dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:buttonSize="wide"
-        app:layout_constraintEnd_toEndOf="@+id/tVAcceder"
-        app:layout_constraintStart_toStartOf="@+id/tVAcceder"
-        app:layout_constraintTop_toBottomOf="@+id/tVAcceder" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
