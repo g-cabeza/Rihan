@@ -75,7 +75,6 @@
         android:ems="10"
         android:hint="@string/Contraseña"
         android:inputType="textPassword"
-        android:maxLength="6"
         android:minHeight="48dp"
 
         android:paddingLeft="5dp"

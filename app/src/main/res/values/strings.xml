@@ -74,6 +74,11 @@
 
     <string name="VerificacionMonedas">Verifica las cantidades</string>
     <string name="InicioSesionGoogle">Iniciar Sesion con Google</string>
+    <string name="Perfil">Perfil</string>
+    <string name="PerfilDatos">Tus Datos</string>
+    <string name="Perfildatos2">Datos</string>
+    <string name="PerfilDatosPersonales">Datos Personales</string>
+
 
 
 </resources>
