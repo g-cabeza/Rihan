@@ -92,10 +92,11 @@ public class MenuPrincipal extends AppCompatActivity implements View.OnClickList
             case R.id.imageView12:  //toca Transporte
                 break;
             case R.id.imageView13: //toca Agenda
-                break;
+                 break;
             case R.id.imageView14://toca billeteraVirtual
                 break;
             case R.id.imageView15://toca Ajuste
+                startActivity(new Intent(this, AjustesMenu.class));
                 break;
         }
     }

@@ -21,6 +21,9 @@
         <activity
             android:name=".pagarIngresoDinero"
             android:exported="true" />
+        <activity android:name=".PerfilDatosUsuario" />
+        <activity android:name=".Ajustes_PerfilUsuario" />
+        <activity android:name=".AjustesMenu" />
         <activity android:name=".RecuperarContrasena" />
         <activity android:name=".NuevoUsuario" />
         <activity android:name=".ValidarBilletes" />

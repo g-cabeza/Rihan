@@ -36,11 +36,9 @@ public class NuevoUsuario extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nuevo_usuario);
 
-
-
         mAuth = FirebaseAuth.getInstance(); //inicializo
 
-        tvbanner = (TextView)findViewById(R.id.textView14);//para que cunado toque vaya almenu principal
+        tvbanner = (TextView)findViewById(R.id.textView14);//para que cuando toque vaya al menu principal
         tvbanner.setOnClickListener(this);
 
         tvregistar = (TextView)findViewById(R.id.textView16);
