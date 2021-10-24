@@ -19,7 +19,7 @@ public class AjustesMenu extends AppCompatActivity {
             case R.id.tv_PerfilUsuario: //Perfil
                 startActivity(new Intent(this, Ajustes_PerfilUsuario.class));
                 break;
-            case R.id.imageButton2://boton Atras, lleva a Menu Principal
+            case R.id.imageView114://boton Atras, lleva a Menu Principal
                 startActivity(new Intent(this, MenuPrincipal.class));
                 break;
 

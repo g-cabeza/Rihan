@@ -85,7 +85,7 @@
         android:ems="10"
         android:fontFamily="sans-serif-thin"
         android:hint="@string/CantidadBilletes"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="14sp"
@@ -111,7 +111,7 @@
         android:ems="10"
         android:fontFamily="sans-serif-thin"
         android:hint="@string/CantidadBilletes"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="14sp"
@@ -138,7 +138,7 @@
         android:ems="10"
         android:fontFamily="sans-serif-thin"
         android:hint="@string/CantidadBilletes"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="14sp"
@@ -165,7 +165,7 @@
         android:ems="10"
         android:fontFamily="sans-serif-thin"
         android:hint="@string/CantidadMonedas"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="14sp"
@@ -192,7 +192,7 @@
         android:ems="10"
         android:fontFamily="sans-serif-thin"
         android:hint="@string/CantidadBilletes"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
         android:textSize="14sp"
@@ -210,27 +210,15 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView27"
         app:srcCompat="@drawable/billete_10" />
 
-    <TextView
-        android:id="@+id/textView29"
-        android:layout_width="131dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="50dp"
-        android:fontFamily="sans-serif-thin"
-        android:hint="@string/CantidadBilletes"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName17" />
-
     <ImageView
         android:id="@+id/imageView72"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginStart="50dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="50dp"
+        android:layout_marginBottom="40dp"
         android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView28"
         app:srcCompat="@drawable/atras" />
@@ -239,11 +227,23 @@
         android:id="@+id/imageView73"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_marginTop="50dp"
         android:layout_marginEnd="50dp"
+        android:layout_marginBottom="40dp"
         android:onClick="onClick"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView29"
         app:srcCompat="@drawable/pulgararriba" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="@string/CantidadBilletes"
+        android:inputType="number"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName17"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName17" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
