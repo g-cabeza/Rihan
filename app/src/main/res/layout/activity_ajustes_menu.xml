@@ -7,6 +7,7 @@
     tools:context=".AjustesMenu">
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="409dp"
         android:layout_height="729dp"
         android:background="@color/white"
@@ -21,9 +22,9 @@
 
             <TextView
                 android:id="@+id/tv_PerfilUsuario"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginLeft="15dp"
+                android:layout_width="331dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="40dp"
                 android:layout_marginTop="100dp"
                 android:layout_marginRight="15dp"
                 android:background="@color/Gris200"
@@ -34,18 +35,18 @@
                 android:textColor="@color/black"
                 android:textColorHint="@color/black"
                 android:textSize="20sp" />
+
         </LinearLayout>
     </ScrollView>
 
-    <ImageButton
-        android:id="@+id/imageButton2"
+    <ImageView
+        android:id="@+id/imageView114"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginStart="40dp"
         android:layout_marginBottom="40dp"
-        android:onClick="AjustesMenu"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/atras"
-        tools:ignore="SpeakableTextPresentCheck" />
+        app:srcCompat="@drawable/atras" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

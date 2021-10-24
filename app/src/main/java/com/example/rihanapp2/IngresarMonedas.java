@@ -5,16 +5,40 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class IngresarMonedas extends AppCompatActivity implements View.OnClickListener {
     private ImageView volverid,continuar,sumarm10,sumarm5,sumarm2,sumarm1,sumarm50,sumarm25,restarm10,restarm5,restarm2,restarm1,restarm50,restarm25;
+    private TextView cantidad,cantidad5,cantidad2,cantidad1,cantidad50,cantidad25;
+    private int Sumar10, Sumar5,Sumar2,Sumar1,Sumar50,Sumar25 ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ingresar_monedas);
+
+        //Singleton.getInstance().init();
+
+        //Inicializo Cantidad
+
+        Sumar10 = 0;
+        Sumar5 = 0;
+        Sumar2 = 0;
+        Sumar1 = 0;
+        Sumar50 = 0;
+        Sumar25 = 0;
+
+
+        cantidad = (TextView) findViewById(R.id.textView26);
+        cantidad5 =(TextView) findViewById(R.id.textView27);
+        cantidad2 = (TextView) findViewById(R.id.textView28);
+        cantidad1 = (TextView) findViewById(R.id.textView30);
+        cantidad50 = (TextView) findViewById(R.id.textView31);
+        cantidad25 = (TextView) findViewById(R.id.textView37);
 
         //Inicializo atras/continuar
 
@@ -25,6 +49,7 @@ public class IngresarMonedas extends AppCompatActivity implements View.OnClickLi
         continuar.setOnClickListener(this);
 
         //inicializo Suma de Monedas
+
         sumarm10=(ImageView) findViewById(R.id.imageView40);
         sumarm10.setOnClickListener(this);
 
@@ -61,55 +86,71 @@ public class IngresarMonedas extends AppCompatActivity implements View.OnClickLi
 
         restarm25=(ImageView) findViewById(R.id.imageView52);
         restarm25.setOnClickListener(this);
-
-
-
     }
 
     @Override
     public void onClick(View v) {
+
         switch (v.getId()) {
             case R.id.imageView55: //toca Atras
                 startActivity(new Intent(this, IngresarDinero1.class));
                 break;
             case R.id.imageView56:  //toca PulgarArriba
+                Singleton.getInstance().moneda10=Integer.parseInt(cantidad.getText().toString());
+                Singleton.getInstance().moneda5=Integer.parseInt(cantidad5.getText().toString());
+                Singleton.getInstance().moneda2=Integer.parseInt(cantidad2.getText().toString());
+                Singleton.getInstance().moneda1=Integer.parseInt(cantidad1.getText().toString());
+                Singleton.getInstance().moneda50=Integer.parseInt(cantidad50.getText().toString());
+                Singleton.getInstance().moneda25=Integer.parseInt(cantidad25.getText().toString());
                 startActivity(new Intent(this, ValidarMonedas.class));
                 break;
             case R.id.imageView40://SUMAR 10
 
+                cantidad.setText(String.valueOf(++Sumar10 ));
                 break;
             case R.id.imageView42://SUMAR 5
 
+                cantidad5.setText(String.valueOf(++Sumar5 ));
                 break;
             case R.id.imageView44://SUMAR 2
 
+                cantidad2.setText(String.valueOf(++Sumar2 ));
                 break;
             case R.id.imageView46://SUMAR 1
-
+                cantidad1.setText(String.valueOf(++Sumar1 ));
                 break;
             case R.id.imageView49://SUMAR 50
 
+                cantidad50.setText(String.valueOf(++Sumar50 ));
                 break;
             case R.id.imageView51://SUMAR 25
 
+                cantidad25.setText(String.valueOf(++Sumar25 ));
                 break;
+
+
             case R.id.imageView41://RESTAR 10
+
+
+                cantidad.setText(String.valueOf(--Sumar10 ));
 
                 break;
             case R.id.imageView43://RESTAR 5
-
+                cantidad5.setText(String.valueOf(--Sumar5 ));
                 break;
             case R.id.imageView45://RESTAR 2
-
+                cantidad2.setText(String.valueOf(--Sumar2 ));
                 break;
             case R.id.imageView48://RESTAR 1
 
+                cantidad1.setText(String.valueOf(--Sumar1 ));
+
                 break;
             case R.id.imageView50://RESTAR 50
-
+                cantidad50.setText(String.valueOf(--Sumar50 ));
                 break;
             case R.id.imageView52://RESTAR 25
-
+                cantidad25.setText(String.valueOf(--Sumar25 ));
                 break;
         }
     }
@@ -124,6 +165,27 @@ public class IngresarMonedas extends AppCompatActivity implements View.OnClickLi
     public void IngresarMonedasAtras (View v){
         Intent PantallaIngresarMonedasAtras = new Intent(this,IngresarDinero1.class);
         startActivity(PantallaIngresarMonedasAtras);
+
+
+TextView cantidad=view.findViewById(R.id.txtcantidad);
+    Button aumentar=view.findViewById(R.id.btnaumntar);
+    Button disminuir=view.findViewById(R.id.btndisminuir)
+
+    aumentar.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            cantidad.setText(String.valueOf(++valor));
+
+        }
+    });
+    disminuir.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            cantidad.setText(String.valueOf(--valor));
+        }
+    });
+
+
     }*/
 
 
