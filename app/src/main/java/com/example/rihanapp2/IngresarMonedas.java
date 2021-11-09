@@ -5,11 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
+
 
 public class IngresarMonedas extends AppCompatActivity implements View.OnClickListener {
     private ImageView volverid,continuar,sumarm10,sumarm5,sumarm2,sumarm1,sumarm50,sumarm25,restarm10,restarm5,restarm2,restarm1,restarm50,restarm25;
@@ -21,7 +19,7 @@ public class IngresarMonedas extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ingresar_monedas);
 
-        //Singleton.getInstance().init();
+        Singleton.getInstance().init();
 
         //Inicializo Cantidad
 
@@ -131,26 +129,35 @@ public class IngresarMonedas extends AppCompatActivity implements View.OnClickLi
 
             case R.id.imageView41://RESTAR 10
 
-
-                cantidad.setText(String.valueOf(--Sumar10 ));
-
+                if ( Sumar10 > 0) {
+                    cantidad.setText(String.valueOf(--Sumar10 ));
+                }
                 break;
             case R.id.imageView43://RESTAR 5
-                cantidad5.setText(String.valueOf(--Sumar5 ));
+                if ( Sumar5 > 0) {
+                    cantidad5.setText(String.valueOf(--Sumar5 ));
+                }
                 break;
             case R.id.imageView45://RESTAR 2
-                cantidad2.setText(String.valueOf(--Sumar2 ));
+                if ( Sumar2 > 0) {
+                    cantidad2.setText(String.valueOf(--Sumar2 ));
+                }
                 break;
             case R.id.imageView48://RESTAR 1
-
-                cantidad1.setText(String.valueOf(--Sumar1 ));
-
+                if ( Sumar1 > 0) {
+                    cantidad1.setText(String.valueOf(--Sumar1 ));
+                }
                 break;
             case R.id.imageView50://RESTAR 50
-                cantidad50.setText(String.valueOf(--Sumar50 ));
+                if ( Sumar50 > 0) {
+                    cantidad50.setText(String.valueOf(--Sumar50 ));
+                }
+
                 break;
             case R.id.imageView52://RESTAR 25
-                cantidad25.setText(String.valueOf(--Sumar25 ));
+                if ( Sumar25 > 0) {
+                    cantidad25.setText(String.valueOf(--Sumar25 ));
+                }
                 break;
         }
     }
