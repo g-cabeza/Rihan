@@ -37,7 +37,7 @@
     <string name="tvBilFisica">Billetera Fisica</string>
     <string name="tvBilVirtual">Billetera Virtual</string>
     <string name="tvTrasnporte">Trasporte</string>
-    <string name="tvAjuste">Ajuste</string>
+    <string name="tvAjuste">Ajustes</string>
     <string name="tvAgenda">Agenda</string>
     <string name="tvCerrarSesion">Cerrar Sesion</string>
 
@@ -78,6 +78,51 @@
     <string name="PerfilDatos">Tus Datos</string>
     <string name="Perfildatos2">Datos</string>
     <string name="PerfilDatosPersonales">Datos Personales</string>
+
+    <string name="BorrarBD">Borrar Base de Datos</string>
+    <string name="ConsultarBD">Consultar Billetes y Monedas</string>
+
+
+    <string name="BDbillete">Billete</string>
+    <string name="BDMoneda">Moneda</string>
+    <string name="BDID">ID</string>
+    <string name="BDTipo">Tipo</string>
+    <string name="BDValor">Valor</string>
+    <string name="BDConslta">Consultar</string>
+
+    <string name="BDBID1000">B1000</string>
+    <string name="BDBID500">B500</string>
+    <string name="BDBID200">B200</string>
+    <string name="BDBID100">B100</string>
+    <string name="BDBID50">B50</string>
+    <string name="BDBID20">B20</string>
+    <string name="BDBID10">B10</string>
+
+    <string name="BDBV1000">1000</string>
+    <string name="BDBV500">500</string>
+    <string name="BDBV200">200</string>
+    <string name="BDBV100">100</string>
+    <string name="BDBV50">50</string>
+    <string name="BDBV20">20</string>
+    <string name="BDBV10">10</string>
+
+    <string name="BDMID10">M10</string>
+    <string name="BDMID5">M5</string>
+    <string name="BDMID2">M2</string>
+    <string name="BDMID1">M1</string>
+    <string name="BDMID50">M50</string>
+    <string name="BDMID25">M25</string>
+
+    <string name="BDMV10">10</string>
+    <string name="BDMV5">5</string>
+    <string name="BDMV2">2</string>
+    <string name="BDMV1">1</string>
+    <string name="BDMV50">0.50</string>
+    <string name="BDMV25">0.25</string>
+
+    <string name="MontoPagar">Ingrese Monto a Pagar</string>
+    <string name="MontoActual">Monto Actual de Billetera Fisica </string>
+
 
 
 

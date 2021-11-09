@@ -8,7 +8,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class ValidarMonedas extends AppCompatActivity implements View.OnClickListener {
@@ -16,6 +15,7 @@ public class ValidarMonedas extends AppCompatActivity implements View.OnClickLis
     private  ImageView volverim,continuar;
     private  ImageView Mon10,Mon5,Mon2,Mon1,Mon50,Mon25;
     private EditText Moneda10,Moneda5,Moneda2,Moneda1,Moneda50,Moneda25;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

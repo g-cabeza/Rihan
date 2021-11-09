@@ -8,112 +8,128 @@
     tools:context=".PerfilDatosUsuario">
 
     <TextView
+        android:id="@+id/textView105"
+        android:layout_width="414dp"
+        android:layout_height="56dp"
+        android:background="@color/teal_700"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="40sp"
+        android:paddingTop="10sp"
+        android:text="@string/PerfilDatos"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
         android:id="@+id/textView65"
-        android:layout_width="340dp"
+        android:layout_width="300dp"
         android:layout_height="40dp"
+        android:background="@color/Gris200"
         android:paddingLeft="15sp"
+        android:paddingTop="10sp"
         android:textColor="@color/black"
         android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView66"
         app:layout_constraintStart_toStartOf="@+id/textView62"
         app:layout_constraintTop_toBottomOf="@+id/textView66" />
 
     <TextView
         android:id="@+id/textView66"
-        android:layout_width="340dp"
+        android:layout_width="300dp"
         android:layout_height="20dp"
         android:fontFamily="sans-serif-light"
         android:paddingLeft="10sp"
         android:paddingTop="5sp"
         android:text="@string/Contraseña"
         android:textColor="@color/black"
-        android:textSize="10sp"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="320dp" />
-
-    <TextView
-        android:id="@+id/textView54"
-        android:layout_width="359dp"
-        android:layout_height="44dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="15dp"
-        android:paddingLeft="10sp"
-        android:text="@string/PerfilDatos"
-        android:textColor="@color/black"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView62"
+        app:layout_constraintStart_toStartOf="@+id/textView62"
+        app:layout_constraintTop_toBottomOf="@+id/textView62" />
 
     <TextView
         android:id="@+id/textView57"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/PerfilDatosPersonales"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/textView54"
-        app:layout_constraintTop_toBottomOf="@+id/textView54" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView105" />
 
     <TextView
         android:id="@+id/textView58"
-        android:layout_width="340dp"
+        android:layout_width="300dp"
         android:layout_height="20dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-light"
         android:paddingLeft="10sp"
         android:paddingTop="5sp"
         android:text="@string/tv_nombre_usuario"
         android:textColor="@color/black"
-        android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/textView57"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView57" />
 
     <TextView
         android:id="@+id/textView61"
-        android:layout_width="340dp"
+        android:layout_width="300dp"
         android:layout_height="20dp"
         android:fontFamily="sans-serif-light"
         android:paddingLeft="10sp"
         android:paddingTop="5sp"
         android:text="@string/email_usuario"
         android:textColor="@color/black"
-        android:textSize="10sp"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView59"
         app:layout_constraintStart_toStartOf="@+id/textView59"
         app:layout_constraintTop_toBottomOf="@+id/textView59" />
 
     <TextView
         android:id="@+id/textView59"
-        android:layout_width="340dp"
+        android:layout_width="300dp"
         android:layout_height="40dp"
+        android:background="@color/Gris200"
         android:paddingLeft="15sp"
+        android:paddingTop="10sp"
         android:textColor="@color/black"
         android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView58"
         app:layout_constraintStart_toStartOf="@+id/textView58"
         app:layout_constraintTop_toBottomOf="@+id/textView58" />
 
     <TextView
         android:id="@+id/textView62"
-        android:layout_width="340dp"
+        android:layout_width="300dp"
         android:layout_height="40dp"
         android:layout_marginTop="60dp"
+        android:background="@color/Gris200"
         android:paddingLeft="15sp"
+        android:paddingTop="10sp"
         android:textColor="@color/black"
         android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView61"
         app:layout_constraintStart_toStartOf="@+id/textView58"
         app:layout_constraintTop_toBottomOf="@+id/textView58" />
 
-    <ImageButton
-        android:id="@+id/imageButton"
+    <ImageView
+        android:id="@+id/imageView115"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginBottom="40dp"
-        android:contentDescription="@string/Atras"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="PerfilDatosUsuario"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/atras" />
+        app:srcCompat="@drawable/atras"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

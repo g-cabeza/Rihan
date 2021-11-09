@@ -8,7 +8,6 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 
 public class ValidarBilletes extends AppCompatActivity implements View.OnClickListener {
@@ -38,19 +37,19 @@ public class ValidarBilletes extends AppCompatActivity implements View.OnClickLi
         Bill10 = (ImageView) findViewById(R.id.imageView28);
 
         Billete1000=(EditText) findViewById(R.id.editTextTextPersonName7);
-        Billete1000.setText(String.valueOf(Singleton2.getInstance().billete1000));
+        Billete1000.setText(String.valueOf(Singleton.getInstance().billete1000));
         Billete500=(EditText) findViewById(R.id.editTextTextPersonName9);
-        Billete500.setText(String.valueOf(Singleton2.getInstance().billete500));
+        Billete500.setText(String.valueOf(Singleton.getInstance().billete500));
         Billete200=(EditText) findViewById(R.id.editTextTextPersonName12);
-        Billete200.setText(String.valueOf(Singleton2.getInstance().billete200));
+        Billete200.setText(String.valueOf(Singleton.getInstance().billete200));
         Billete100=(EditText) findViewById(R.id.editTextTextPersonName14);
-        Billete100.setText(String.valueOf(Singleton2.getInstance().billete100));
+        Billete100.setText(String.valueOf(Singleton.getInstance().billete100));
         Billete50=(EditText) findViewById(R.id.editTextTextPersonName15);
-        Billete50.setText(String.valueOf(Singleton2.getInstance().billete50));
+        Billete50.setText(String.valueOf(Singleton.getInstance().billete50));
         Billete20=(EditText) findViewById(R.id.editTextTextPersonName17);
-        Billete20.setText(String.valueOf(Singleton2.getInstance().billete20));
+        Billete20.setText(String.valueOf(Singleton.getInstance().billete20));
         Billete10=(EditText) findViewById(R.id.editTextTextPersonName);
-        Billete10.setText(String.valueOf(Singleton2.getInstance().billete10));
+        Billete10.setText(String.valueOf(Singleton.getInstance().billete10));
 
 
         BDSQLiteOpenHelper TipoBM = new BDSQLiteOpenHelper(this,"UsuarioMB",null,1);

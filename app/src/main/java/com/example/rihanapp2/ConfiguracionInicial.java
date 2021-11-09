@@ -3,7 +3,9 @@ package com.example.rihanapp2;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Patterns;
@@ -24,12 +26,15 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 
 import java.util.regex.Pattern;
 
 public class ConfiguracionInicial extends AppCompatActivity implements View.OnClickListener {
 
-    private static final int RC_SIGN_IN =171 ;
+    private static final int RC_SIGN_IN =171 ; //constantes
     private static final String TAG = "tag";
     private EditText nombre_usuario, eTEmailIniSes, eTContraseñaIniSes;
     private TextView registrar, recuperarContraseña, banner;
@@ -37,6 +42,8 @@ public class ConfiguracionInicial extends AppCompatActivity implements View.OnCl
     private TextView acceder;
 
     private GoogleSignInClient mGoogleSignInClient;
+
+
 
 
     @Override
@@ -89,7 +96,12 @@ public class ConfiguracionInicial extends AppCompatActivity implements View.OnCl
 
 
         mAuth = FirebaseAuth.getInstance();
+
+
+
     }
+
+
 
     //metodo que va a ejecutar el boton Bien (La mano)
        /*public void Bien (View view){

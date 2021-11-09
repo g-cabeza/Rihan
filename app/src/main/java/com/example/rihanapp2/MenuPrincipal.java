@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
@@ -17,6 +18,12 @@ import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 public class MenuPrincipal extends AppCompatActivity implements View.OnClickListener {
 
@@ -33,6 +40,11 @@ public class MenuPrincipal extends AppCompatActivity implements View.OnClickList
 
     private TextView nombre2_usuario;  //declaro el textview de menu principal
     private GoogleSignInClient mGoogleSignInClient;
+
+    private FirebaseUser user;
+    private DatabaseReference reference;
+    private String userID;
+
 
 
 
@@ -64,6 +76,34 @@ public class MenuPrincipal extends AppCompatActivity implements View.OnClickList
 
         ajuste=(ImageView)findViewById(R.id.imageView15);
         ajuste.setOnClickListener(this);
+        //recuperar Nombre de la Base de DATOS FIREBASE
+
+        user = FirebaseAuth.getInstance().getCurrentUser();
+        reference = FirebaseDatabase.getInstance().getReference("Usuarios");
+        userID = user.getUid();
+
+
+        final TextView nombreusuario = (TextView) findViewById(R.id.textView54);
+
+        reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                Usuario userProfile = snapshot.getValue(Usuario.class);
+                if (userProfile != null){
+                    String NombreUsuario = userProfile.NombreUsuario;
+
+                    nombreusuario.setText("Hola "+NombreUsuario);
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Toast.makeText(MenuPrincipal.this, "Sucedio un error",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
 
 
         logout = (ImageView) findViewById(R.id.logout);
@@ -79,6 +119,12 @@ public class MenuPrincipal extends AppCompatActivity implements View.OnClickList
                  }
             }
         });
+
+
+
+
+
+
     }
 
     @Override

@@ -6,12 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".AjustesMenu">
 
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="414dp"
+        android:layout_height="56dp"
+        android:background="@color/teal_700"
+        android:fontFamily="sans-serif-medium"
+        android:paddingLeft="40sp"
+        android:paddingTop="10sp"
+        android:text="@string/tvAjuste"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="406dp"
+        android:layout_height="666dp"
+        android:layout_marginTop="60dp"
         android:background="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -22,11 +40,11 @@
 
             <TextView
                 android:id="@+id/tv_PerfilUsuario"
-                android:layout_width="331dp"
-                android:layout_height="55dp"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
                 android:layout_marginLeft="40dp"
                 android:layout_marginTop="100dp"
-                android:layout_marginRight="15dp"
+                android:layout_marginRight="40dp"
                 android:background="@color/Gris200"
                 android:drawableLeft="@drawable/persona"
                 android:onClick="AjustesMenu"
@@ -34,6 +52,36 @@
                 android:text="@string/Perfil"
                 android:textColor="@color/black"
                 android:textColorHint="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView69"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/Gris200"
+                android:minHeight="48dp"
+                android:onClick="AjustesMenu"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:text="@string/BorrarBD"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView104"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/Gris200"
+                android:onClick="AjustesMenu"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:text="@string/ConsultarBD"
+                android:textColor="@color/black"
                 android:textSize="20sp" />
 
         </LinearLayout>
