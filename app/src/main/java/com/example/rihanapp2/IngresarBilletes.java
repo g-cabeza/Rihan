@@ -19,7 +19,7 @@ public class IngresarBilletes extends AppCompatActivity implements View.OnClickL
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ingresar_billetes);
 
-        Singleton.getInstance().init();
+        Singleton2.getInstance().init();
 
         //Inicializo Cantidad
         Sumar1000 = 0;
@@ -100,13 +100,13 @@ public class IngresarBilletes extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.imageView69:  //toca Pulgar Arriba
 
-                Singleton.getInstance().billete1000 = Integer.parseInt(cantidad1000.getText().toString());
-                Singleton.getInstance().billete500 = Integer.parseInt(cantidad500.getText().toString());
-                Singleton.getInstance().billete200 = Integer.parseInt(cantidad200.getText().toString());
-                Singleton.getInstance().billete100 = Integer.parseInt(cantidad100.getText().toString());
-                Singleton.getInstance().billete50 = Integer.parseInt(cantidad50.getText().toString());
-                Singleton.getInstance().billete20 = Integer.parseInt(cantidad20.getText().toString());
-                Singleton.getInstance().billete10 = Integer.parseInt(cantidad10.getText().toString());
+                Singleton2.getInstance().billete1000 = Integer.parseInt(cantidad1000.getText().toString());
+                Singleton2.getInstance().billete500 = Integer.parseInt(cantidad500.getText().toString());
+                Singleton2.getInstance().billete200 = Integer.parseInt(cantidad200.getText().toString());
+                Singleton2.getInstance().billete100 = Integer.parseInt(cantidad100.getText().toString());
+                Singleton2.getInstance().billete50 = Integer.parseInt(cantidad50.getText().toString());
+                Singleton2.getInstance().billete20 = Integer.parseInt(cantidad20.getText().toString());
+                Singleton2.getInstance().billete10 = Integer.parseInt(cantidad10.getText().toString());
 
                 startActivity(new Intent(this, ValidarBilletes.class));
                 break;

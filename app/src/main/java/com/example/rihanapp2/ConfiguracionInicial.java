@@ -68,8 +68,6 @@ public class ConfiguracionInicial extends AppCompatActivity implements View.OnCl
         }
 
 
-
-
         // Set the dimensions of the sign-in button.
         SignInButton signInButton = findViewById(R.id.sign_in_button);
         signInButton.setSize(SignInButton.SIZE_STANDARD);
@@ -94,25 +92,11 @@ public class ConfiguracionInicial extends AppCompatActivity implements View.OnCl
         banner = (TextView) findViewById(R.id.tVTitulo);
         banner.setOnClickListener(this);
 
-
         mAuth = FirebaseAuth.getInstance();
 
 
 
     }
-
-
-
-    //metodo que va a ejecutar el boton Bien (La mano)
-       /*public void Bien (View view){
-          //      +nombre del objeto = new intent ( desde que activity , hasta que otra va.class).
-           Intent  Bbien = new Intent(this, MenuPrincipal.class);
-           //paso el valor nombre
-           Bbien.putExtra("DatoNombre",nombre_usuario.getText().toString());
-           startActivity(Bbien);
-
-    }*/
-
 
     @Override
     public void onClick(View v) {

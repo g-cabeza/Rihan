@@ -29,24 +29,11 @@ public class MenuPrincipal extends AppCompatActivity implements View.OnClickList
 
     private ImageView logout,billefisica,billevirtual,trasnporte,agenda,ajuste;
 
-        /*//creo relacion L-G
-        nombre2_usuario = (TextView) findViewById(R.id.nombre2_usuario);
-        //creo una variable temporal
-        String DatoNombre =getIntent().getStringExtra("DatoNombre");
-        //coloco el brazo en
-        nombre2_usuario.setText("Hola " + DatoNombre);*/
-
-
-
-    private TextView nombre2_usuario;  //declaro el textview de menu principal
     private GoogleSignInClient mGoogleSignInClient;
 
     private FirebaseUser user;
     private DatabaseReference reference;
     private String userID;
-
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,8 +46,6 @@ public class MenuPrincipal extends AppCompatActivity implements View.OnClickList
 
         // Build a GoogleSignInClient with the options specified by gso.
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
-
-
 
         billefisica=(ImageView)findViewById(R.id.imageView11);
         billefisica.setOnClickListener(this);
@@ -76,12 +61,11 @@ public class MenuPrincipal extends AppCompatActivity implements View.OnClickList
 
         ajuste=(ImageView)findViewById(R.id.imageView15);
         ajuste.setOnClickListener(this);
+
         //recuperar Nombre de la Base de DATOS FIREBASE
-
-        user = FirebaseAuth.getInstance().getCurrentUser();
+       /* user = FirebaseAuth.getInstance().getCurrentUser();
         reference = FirebaseDatabase.getInstance().getReference("Usuarios");
-        userID = user.getUid();
-
+        //  NULLPOINTEREXCEPTION  REVISAR userID =  user.getUid();
 
         final TextView nombreusuario = (TextView) findViewById(R.id.textView54);
 
@@ -93,18 +77,13 @@ public class MenuPrincipal extends AppCompatActivity implements View.OnClickList
                     String NombreUsuario = userProfile.NombreUsuario;
 
                     nombreusuario.setText("Hola "+NombreUsuario);
-
                 }
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
                 Toast.makeText(MenuPrincipal.this, "Sucedio un error",Toast.LENGTH_SHORT).show();
             }
-        });
-
-
-
+        });*/
 
         logout = (ImageView) findViewById(R.id.logout);
         logout.setOnClickListener(new View.OnClickListener() {   //Habria que hacer un condicional para ver con que entro. y cerrar sesion
@@ -119,12 +98,6 @@ public class MenuPrincipal extends AppCompatActivity implements View.OnClickList
                  }
             }
         });
-
-
-
-
-
-
     }
 
     @Override
