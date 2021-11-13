@@ -19,6 +19,7 @@ public class IngresarMonedas extends AppCompatActivity implements View.OnClickLi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ingresar_monedas);
 
+
         Singleton.getInstance().init();
 
         //Inicializo Cantidad
@@ -36,7 +37,7 @@ public class IngresarMonedas extends AppCompatActivity implements View.OnClickLi
         cantidad2 = (TextView) findViewById(R.id.textView28);
         cantidad1 = (TextView) findViewById(R.id.textView30);
         cantidad50 = (TextView) findViewById(R.id.textView31);
-        cantidad25 = (TextView) findViewById(R.id.textView37);
+        cantidad25 = (TextView) findViewById(R.id.textView32);
 
         //Inicializo atras/continuar
 
@@ -103,7 +104,6 @@ public class IngresarMonedas extends AppCompatActivity implements View.OnClickLi
                 startActivity(new Intent(this, ValidarMonedas.class));
                 break;
             case R.id.imageView40://SUMAR 10
-
                 cantidad.setText(String.valueOf(++Sumar10 ));
                 break;
             case R.id.imageView42://SUMAR 5
