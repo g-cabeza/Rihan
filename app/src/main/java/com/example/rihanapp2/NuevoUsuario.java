@@ -48,7 +48,7 @@ public class NuevoUsuario extends AppCompatActivity implements View.OnClickListe
         eTEmailRegistrarUsuario = (EditText)findViewById(R.id.eTEmailRegistrar);
         eTContraseñaRegistrarUsuario = (EditText)findViewById(R.id.eTContraseñaRegistrar);
 
-        progressBar = (ProgressBar) findViewById(R.id.progressBar2);
+       // progressBar = (ProgressBar) findViewById(R.id.progressBar2);
 
 
 

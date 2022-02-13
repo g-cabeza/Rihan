@@ -1,14 +1,19 @@
 package com.example.rihanapp2;
 
+import static com.example.rihanapp2.BD.BDSQLiteOpenHelper.TABLE_NAME;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
 import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+
+import com.example.rihanapp2.BD.BDSQLiteOpenHelper;
 
 public class ValidarBilletes extends AppCompatActivity implements View.OnClickListener {
 
@@ -51,37 +56,27 @@ public class ValidarBilletes extends AppCompatActivity implements View.OnClickLi
         Billete10=(EditText) findViewById(R.id.editTextTextPersonName);
         Billete10.setText(String.valueOf(Singleton2.getInstance().billete10));
 
-
-
-
-        BDSQLiteOpenHelper TipoBM = new BDSQLiteOpenHelper(this,"UsuarioMB",null,1);
-        SQLiteDatabase UsuarioMonBill = TipoBM.getWritableDatabase();
+        BDSQLiteOpenHelper basededatos = new BDSQLiteOpenHelper(this);
+        SQLiteDatabase db = basededatos.getWritableDatabase();
 
         ContentValues values = new ContentValues();
-        values.put("ID", String.valueOf(Bill1000));
-        values.put("Cantidad", String.valueOf(Billete1000));
 
-        values.put("ID", String.valueOf(Bill500));
-        values.put("Cantidad", String.valueOf(Billete500));
+        values.put("CANTIDAD", Billete1000.getText().toString());
+        db.update("BilletesyMonedasGlobal",values,"VALOR=1000 AND TIPO=Billete" , new String[]{String.valueOf(Billete1000)});
+        values.put("CANTIDAD", Billete500.getText().toString());
+        db.update("BilletesyMonedasGlobal",values,"where VALOR=500 AND TIPO=Billete", new String[]{String.valueOf(Billete500)});
+        values.put("CANTIDAD", Billete200.getText().toString());
+        db.update("BilletesyMonedasGlobal",values,"where VALOR=200 AND TIPO=Billete", new String[]{String.valueOf(Billete200)});
+        values.put("CANTIDAD", Billete100.getText().toString());
+        db.update("BilletesyMonedasGlobal",values,"where VALOR=100 AND TIPO=Billete", new String[]{String.valueOf(Billete100)});
+        values.put("CANTIDAD", Billete50.getText().toString());
+        db.update("BilletesyMonedasGlobal",values,"where VALOR=50 AND TIPO=Billete", new String[]{String.valueOf(Billete50)});
+        values.put("CANTIDAD", Billete20.getText().toString());
+        db.update("BilletesyMonedasGlobal",values,"where VALOR=20 AND TIPO=Billete", new String[]{String.valueOf(Billete20)});
+        values.put("CANTIDAD", Billete10.getText().toString());
+        db.update("BilletesyMonedasGlobal",values,"where VALOR=10 AND TIPO=Billete", new String[]{String.valueOf(Billete10)});
 
-        values.put("ID", String.valueOf(Bill200));
-        values.put("Cantidad", String.valueOf(Billete200));
-
-        values.put("ID", String.valueOf(Bill100));
-        values.put("Cantidad", String.valueOf(Billete100));
-
-        values.put("ID", String.valueOf(Bill50));
-        values.put("Cantidad", String.valueOf(Billete50));
-
-        values.put("ID", String.valueOf(Bill20));
-        values.put("Cantidad", String.valueOf(Billete20));
-
-        values.put("ID", String.valueOf(Bill10));
-        values.put("Cantidad", String.valueOf(Billete10));
-
-       // Insert los datos en la tabla
-        UsuarioMonBill.insert("BilletesyMonedas", null, values);
-        UsuarioMonBill.close();
+        db.close();
 
     }
 

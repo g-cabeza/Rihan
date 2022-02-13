@@ -79,8 +79,14 @@
     <string name="Perfildatos2">Datos</string>
     <string name="PerfilDatosPersonales">Datos Personales</string>
 
+
+    <string name="CrearBD">Crear Base de Datos</string>
+    <string name="CargarBD">Cargar Base de Datos</string>
     <string name="BorrarBD">Borrar Base de Datos</string>
     <string name="ConsultarBD">Consultar Billetes y Monedas</string>
+    <string name="Guardar">Guardar</string>
+    <string name="NuevoRegistro">Nuevo Registro</string>
+    <string name="txt_id">ID</string>
 
 
     <string name="BDbillete">Billete</string>
@@ -122,8 +128,6 @@
 
     <string name="MontoPagar">Ingrese Monto a Pagar</string>
     <string name="MontoActual">Monto Actual de Billetera Fisica </string>
-
-
 
 
 </resources>

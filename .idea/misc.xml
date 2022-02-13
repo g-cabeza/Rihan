@@ -11,12 +11,14 @@
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_ajustes_perfil_usuario.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_billetera_fisica1.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_billetes_monedas_bd.xml" value="0.33" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_carga_global_bm.xml" value="0.209375" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_configuracion_inicial.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_ingresar_billetes.xml" value="0.25" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_ingresar_dinero1.xml" value="0.18" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_ingresar_dinero1.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_ingresar_monedas.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_menu_principal.xml" value="0.25" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_mostrarbm.xml" value="0.209375" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_nuevo_usuario.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_pagar2.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_pagar_ingreso_dinero.xml" value="0.25" />
@@ -26,6 +28,8 @@
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_validar_billetes.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_validar_monedas.xml" value="0.25" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/activity_vuelto.xml" value="0.25" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/layout/lista_item_billetesmonedas.xml" value="0.209375" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/Rihan/app/src/main/res/menu/menu_principal.xml" value="0.209375" />
       </map>
     </option>
   </component>

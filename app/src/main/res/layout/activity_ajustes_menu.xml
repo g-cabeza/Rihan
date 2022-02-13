@@ -55,6 +55,38 @@
                 android:textSize="20sp" />
 
             <TextView
+                android:id="@+id/crearbasededatos"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/Gris200"
+                android:minHeight="48dp"
+                android:onClick="AjustesMenu"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:text="@string/CrearBD"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cargarbasededatos"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/Gris200"
+                android:minHeight="48dp"
+                android:onClick="AjustesMenu"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:text="@string/CargarBD"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
                 android:id="@+id/textView69"
                 android:layout_width="300dp"
                 android:layout_height="50dp"
@@ -93,8 +125,10 @@
         android:layout_height="50dp"
         android:layout_marginStart="40dp"
         android:layout_marginBottom="40dp"
+        android:onClick="AjustesMenu"
         app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/atras" />
+        app:srcCompat="@drawable/atras"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

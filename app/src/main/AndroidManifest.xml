@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         <activity
+            android:name=".mostrarbm"
+            android:exported="true" />
+        <activity
+            android:name=".CargaGlobalBM"
+            android:exported="true" />
+        <activity
             android:name=".Billetes_Monedas_BD"
             android:exported="true" />
         <activity

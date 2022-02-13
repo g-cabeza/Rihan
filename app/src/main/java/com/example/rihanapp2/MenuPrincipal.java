@@ -31,6 +31,7 @@ public class MenuPrincipal extends AppCompatActivity implements View.OnClickList
 
     private GoogleSignInClient mGoogleSignInClient;
 
+    //Recuperar datos firebase
     private FirebaseUser user;
     private DatabaseReference reference;
     private String userID;
@@ -63,9 +64,11 @@ public class MenuPrincipal extends AppCompatActivity implements View.OnClickList
         ajuste.setOnClickListener(this);
 
         //recuperar Nombre de la Base de DATOS FIREBASE
-       /* user = FirebaseAuth.getInstance().getCurrentUser();
-        reference = FirebaseDatabase.getInstance().getReference("Usuarios");
-        //  NULLPOINTEREXCEPTION  REVISAR userID =  user.getUid();
+
+       /*user = FirebaseAuth.getInstance().getCurrentUser();
+       reference = FirebaseDatabase.getInstance().getReference("Usuarios");
+        //  NULLPOINTEREXCEPTION  REVISAR
+        userID = user.getUid();
 
         final TextView nombreusuario = (TextView) findViewById(R.id.textView54);
 
@@ -73,7 +76,7 @@ public class MenuPrincipal extends AppCompatActivity implements View.OnClickList
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 Usuario userProfile = snapshot.getValue(Usuario.class);
-                if (userProfile != null){
+                if (user != null){
                     String NombreUsuario = userProfile.NombreUsuario;
 
                     nombreusuario.setText("Hola "+NombreUsuario);
@@ -84,6 +87,10 @@ public class MenuPrincipal extends AppCompatActivity implements View.OnClickList
                 Toast.makeText(MenuPrincipal.this, "Sucedio un error",Toast.LENGTH_SHORT).show();
             }
         });*/
+
+
+
+
 
         logout = (ImageView) findViewById(R.id.logout);
         logout.setOnClickListener(new View.OnClickListener() {   //Habria que hacer un condicional para ver con que entro. y cerrar sesion

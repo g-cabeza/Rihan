@@ -94,13 +94,16 @@ public class IngresarMonedas extends AppCompatActivity implements View.OnClickLi
             case R.id.imageView55: //toca Atras
                 startActivity(new Intent(this, IngresarDinero1.class));
                 break;
-            case R.id.imageView56:  //toca PulgarArriba
-                Singleton.getInstance().moneda10=Integer.parseInt(cantidad.getText().toString());
-                Singleton.getInstance().moneda5=Integer.parseInt(cantidad5.getText().toString());
-                Singleton.getInstance().moneda2=Integer.parseInt(cantidad2.getText().toString());
-                Singleton.getInstance().moneda1=Integer.parseInt(cantidad1.getText().toString());
-                Singleton.getInstance().moneda50=Integer.parseInt(cantidad50.getText().toString());
-                Singleton.getInstance().moneda25=Integer.parseInt(cantidad25.getText().toString());
+            case R.id.imageView56:  //toca PulgarArriba //problema si no ponemos todo los numeros porque no tiene ningunnumero que parsear.
+                   Singleton.getInstance().moneda10=Integer.parseInt(cantidad.getText().toString());
+                    Singleton.getInstance().moneda10=Integer.parseInt(cantidad.getText().toString());
+                    Singleton.getInstance().moneda5=Integer.parseInt(cantidad5.getText().toString());
+                    Singleton.getInstance().moneda2=Integer.parseInt(cantidad2.getText().toString());
+                    Singleton.getInstance().moneda1=Integer.parseInt(cantidad1.getText().toString());
+                    Singleton.getInstance().moneda50=Integer.parseInt(cantidad50.getText().toString());
+                    Singleton.getInstance().moneda25=Integer.parseInt(cantidad25.getText().toString());
+
+
                 startActivity(new Intent(this, ValidarMonedas.class));
                 break;
             case R.id.imageView40://SUMAR 10

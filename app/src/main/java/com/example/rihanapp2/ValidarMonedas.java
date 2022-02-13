@@ -4,11 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.ContentValues;
 import android.content.Intent;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+
+import com.example.rihanapp2.BD.BDSQLiteOpenHelper;
 
 public class ValidarMonedas extends AppCompatActivity implements View.OnClickListener {
 
@@ -54,11 +57,9 @@ public class ValidarMonedas extends AppCompatActivity implements View.OnClickLis
         Moneda25=(EditText) findViewById(R.id.editTextTextPersonName13);
         Moneda25.setText(String.valueOf(Singleton.getInstance().moneda25));
 
-        BDSQLiteOpenHelper TipoBM = new BDSQLiteOpenHelper(this,"UsuarioMB",null,1);
-        SQLiteDatabase UsuarioMonBill = TipoBM.getWritableDatabase();
 
-        ContentValues values = new ContentValues();
-        values.put("ID", String.valueOf(Mon10));
+
+        /*values.put("ID", String.valueOf(Moneda10));
         values.put("Cantidad", String.valueOf(Moneda10));
 
         values.put("ID", String.valueOf(Mon5));
@@ -74,13 +75,12 @@ public class ValidarMonedas extends AppCompatActivity implements View.OnClickLis
         values.put("Cantidad", String.valueOf(Moneda50));
 
         values.put("ID", String.valueOf(Mon25));
-        values.put("Cantidad", String.valueOf(Moneda25));
-
-
+        values.put("Cantidad", String.valueOf(Moneda25));*/
 
         // Insert los datos en la tabla
-        UsuarioMonBill.insert("BilletesyMonedas", null, values);
-        UsuarioMonBill.close();
+       //db.insert("Usuario_Billetes_Monedas", null, values);
+      // db.close();
+
 
 
 
